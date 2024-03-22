@@ -1,0 +1,89 @@
+//HOTELS HOTELS HOTELS
+###Get
+GET http://localhost:3000/details
+
+###POST 
+POST http://localhost:3000/details
+Content-Type: application/json
+{
+    "name": "Statue of Liberty", 
+    "address": "New Jersey, USA",
+    "phone_number": 8889,
+    "time.open": "6:00 AM",
+    "time.close": "6:00 PM"
+}
+
+###Patch 
+PATCH http://localhost:3000/details/65fd10400c24cb3824994c5b
+Content-Type: application/json
+{
+    "name": "Statue of Washington", 
+    "address": "New York, USA",
+    "phone_number": 8889,
+    "time.open": "6:00 AM",
+    "time.close": "6:00 PM"
+}
+
+###Delete
+DELETE http://localhost:3000/details/65fd10400c24cb3824994c5b
+
+
+//EMPLOYEE EMPLOYEE EMPLOYEE
+###GET
+GET http://localhost:3000/employee
+
+###POST
+POST http://localhost:3000/employee
+Content-Type: application/json
+
+{
+    "employee.fname" : "Sentinels",
+    "employee.mname" : "America",
+    "employee.lname" : "Park",
+    "employee.employee_number" : 4
+}
+
+###Patch
+PATCH http://localhost:3000/employee/65fd2307e2df32be7d28fc66
+Content-Type: application/json
+
+{
+    "employee.fname" : "SCuhsbs",
+    "employee.mname" : "Asfa",
+    "employee.lname" : "fe",
+    "employee.employee_number" : 4
+}
+
+###Delete
+DELETE http://localhost:3000/employee/65fd1385763f251315240885
+
+
+// RESERVATION RESERVATION RESERVATION
+###Get 
+GET http://localhost:3000/reservation
+
+###POST 
+POST http://localhost:3000/reservation
+Content-Type: application/json
+
+{
+    "date" : "03-29-2022",
+    "occasion" : "Birthday",
+    "numberofGuest" : 4,
+    "time.arrival" : "4:00 PM",
+    "time.departure" : "6:00 PM"
+}
+
+###Patch 
+PATCH http://localhost:3000/reservation/65fd0e2d2113317d0fad36a7
+Content-Type: application/json
+
+{
+    "date" : "03-29-2022",
+    "occasion" : "Anniversary",
+    "numberofGuest" : 4,
+    "time.arrival" : "4:00 PM",
+    "time.departure" : "6:00 PM"
+}
+###Delete 
+DELETE http://localhost:3000/reservation/65fd0e2d2113317d0fad36a7
